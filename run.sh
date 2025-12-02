@@ -1,4 +1,5 @@
 #!/bin/bash
+# nohup run.sh config > main_process.log 2>&1 &
 
 # 从命令行参数获取实验名
 if [ $# -eq 0 ]; then
