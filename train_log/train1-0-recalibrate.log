@@ -1,0 +1,1252 @@
+nohup: ignoring input
+Using device: cuda:7
+>> Data: Splitting 45k (Train) / 5k (Reward) / 10k (Test)
+ModelWrapper: Detected 27 prunable blocks (Conv1+Conv2 pairs).
+Env Init: Original=125.04M, Target=62.52M
+Environment initialized. State dim: 9, Target Prune Rate: 0.5
+
+=== [Phase 1] Warmup (Weights Training) ===
+Epoch 1 Val Acc: 0.3690 | LR: 0.10000
+Epoch 2 Val Acc: 0.4339 | LR: 0.10000
+Epoch 3 Val Acc: 0.5664 | LR: 0.10000
+Epoch 4 Val Acc: 0.6791 | LR: 0.10000
+Epoch 5 Val Acc: 0.7217 | LR: 0.10000
+Epoch 6 Val Acc: 0.7242 | LR: 0.10000
+Epoch 7 Val Acc: 0.6744 | LR: 0.10000
+Epoch 8 Val Acc: 0.7789 | LR: 0.10000
+Epoch 9 Val Acc: 0.7702 | LR: 0.10000
+Epoch 10 Val Acc: 0.7904 | LR: 0.10000
+>> Warmup done. Updating base weights for Agent...
+
+=== [Phase 2] Fill Buffer (Exploration) ===
+Epoch 11/200
+  Fill Episode 1/10: Reward=0.5858
+  Fill Episode 2/10: Reward=0.5696
+  Fill Episode 3/10: Reward=0.6746
+  Fill Episode 4/10: Reward=0.6442
+  Fill Episode 5/10: Reward=0.6842
+  Fill Episode 6/10: Reward=0.6942
+  Fill Episode 7/10: Reward=0.5922
+  Fill Episode 8/10: Reward=0.5710
+  Fill Episode 9/10: Reward=0.6688
+  Fill Episode 10/10: Reward=0.5346
+Epoch 12/200
+  Fill Episode 1/10: Reward=0.6950
+  Fill Episode 2/10: Reward=0.7046
+  Fill Episode 3/10: Reward=0.6490
+  Fill Episode 4/10: Reward=0.6458
+  Fill Episode 5/10: Reward=0.6878
+  Fill Episode 6/10: Reward=0.5950
+  Fill Episode 7/10: Reward=0.6678
+  Fill Episode 8/10: Reward=0.6198
+  Fill Episode 9/10: Reward=0.6124
+  Fill Episode 10/10: Reward=0.6664
+Epoch 13/200
+  Fill Episode 1/10: Reward=0.6234
+  Fill Episode 2/10: Reward=0.5614
+  Fill Episode 3/10: Reward=0.6514
+  Fill Episode 4/10: Reward=0.6864
+  Fill Episode 5/10: Reward=0.7040
+  Fill Episode 6/10: Reward=0.6706
+  Fill Episode 7/10: Reward=0.6436
+  Fill Episode 8/10: Reward=0.6384
+  Fill Episode 9/10: Reward=0.5876
+  Fill Episode 10/10: Reward=0.6508
+Epoch 14/200
+  Fill Episode 1/10: Reward=0.5582
+  Fill Episode 2/10: Reward=0.7264
+  Fill Episode 3/10: Reward=0.6440
+  Fill Episode 4/10: Reward=0.5142
+  Fill Episode 5/10: Reward=0.6656
+  Fill Episode 6/10: Reward=0.6616
+  Fill Episode 7/10: Reward=0.5380
+  Fill Episode 8/10: Reward=0.5174
+  Fill Episode 9/10: Reward=0.5952
+  Fill Episode 10/10: Reward=0.5510
+Epoch 15/200
+  Fill Episode 1/10: Reward=0.5868
+  Fill Episode 2/10: Reward=0.5738
+  Fill Episode 3/10: Reward=0.6146
+  Fill Episode 4/10: Reward=0.7010
+  Fill Episode 5/10: Reward=0.7224
+  Fill Episode 6/10: Reward=0.6474
+  Fill Episode 7/10: Reward=0.5428
+  Fill Episode 8/10: Reward=0.6610
+  Fill Episode 9/10: Reward=0.6250
+  Fill Episode 10/10: Reward=0.7028
+Epoch 16/200
+  Fill Episode 1/10: Reward=0.5816
+  Fill Episode 2/10: Reward=0.6780
+  Fill Episode 3/10: Reward=0.6864
+  Fill Episode 4/10: Reward=0.6542
+  Fill Episode 5/10: Reward=0.5718
+  Fill Episode 6/10: Reward=0.6098
+  Fill Episode 7/10: Reward=0.6356
+  Fill Episode 8/10: Reward=0.6532
+  Fill Episode 9/10: Reward=0.6760
+  Fill Episode 10/10: Reward=0.6586
+Epoch 17/200
+  Fill Episode 1/10: Reward=0.6746
+  Fill Episode 2/10: Reward=0.6510
+  Fill Episode 3/10: Reward=0.6222
+  Fill Episode 4/10: Reward=0.6618
+  Fill Episode 5/10: Reward=0.6074
+  Fill Episode 6/10: Reward=0.6132
+  Fill Episode 7/10: Reward=0.6532
+  Fill Episode 8/10: Reward=0.6346
+  Fill Episode 9/10: Reward=0.5302
+  Fill Episode 10/10: Reward=0.6654
+Epoch 18/200
+  Fill Episode 1/10: Reward=0.6520
+  Fill Episode 2/10: Reward=0.6784
+  Fill Episode 3/10: Reward=0.7070
+  Fill Episode 4/10: Reward=0.6408
+  Fill Episode 5/10: Reward=0.6432
+  Fill Episode 6/10: Reward=0.7106
+  Fill Episode 7/10: Reward=0.6252
+  Fill Episode 8/10: Reward=0.6418
+  Fill Episode 9/10: Reward=0.6642
+  Fill Episode 10/10: Reward=0.5962
+Epoch 19/200
+  Fill Episode 1/10: Reward=0.6214
+  Fill Episode 2/10: Reward=0.6522
+  Fill Episode 3/10: Reward=0.5650
+  Fill Episode 4/10: Reward=0.5304
+  Fill Episode 5/10: Reward=0.5860
+  Fill Episode 6/10: Reward=0.5996
+  Fill Episode 7/10: Reward=0.5600
+  Fill Episode 8/10: Reward=0.5568
+  Fill Episode 9/10: Reward=0.6348
+  Fill Episode 10/10: Reward=0.5780
+Epoch 20/200
+  Fill Episode 1/10: Reward=0.6000
+  Fill Episode 2/10: Reward=0.5922
+  Fill Episode 3/10: Reward=0.6370
+  Fill Episode 4/10: Reward=0.5358
+  Fill Episode 5/10: Reward=0.6516
+  Fill Episode 6/10: Reward=0.5540
+  Fill Episode 7/10: Reward=0.6926
+  Fill Episode 8/10: Reward=0.6448
+  Fill Episode 9/10: Reward=0.6148
+  Fill Episode 10/10: Reward=0.5342
+
+=== [Phase 3] Joint Agent Training & Pruning Search ===
+Epoch 21/200
+[BestPolicy] Updated best reward: 0.6424
+  Episode 1/10: Reward=0.6424
+[BestPolicy] Updated best reward: 0.6848
+  Episode 2/10: Reward=0.6848
+  Episode 3/10: Reward=0.6310
+  Episode 4/10: Reward=0.6744
+  Episode 5/10: Reward=0.5096
+  Episode 6/10: Reward=0.6798
+[BestPolicy] Updated best reward: 0.6864
+  Episode 7/10: Reward=0.6864
+  Episode 8/10: Reward=0.6772
+  Episode 9/10: Reward=0.5338
+  Episode 10/10: Reward=0.6026
+  >> Decoder Loss: 0.017366
+  >> SAC Q1 Loss: 0.0224, Policy Loss: 0.1117
+Epoch 21 Val Acc: 0.8069 | LR: 0.10000
+Epoch 22/200
+  Episode 1/10: Reward=0.5820
+  Episode 2/10: Reward=0.6372
+  Episode 3/10: Reward=0.6760
+  Episode 4/10: Reward=0.6146
+  Episode 5/10: Reward=0.6628
+  Episode 6/10: Reward=0.5436
+  Episode 7/10: Reward=0.6302
+  Episode 8/10: Reward=0.5896
+  Episode 9/10: Reward=0.6458
+  Episode 10/10: Reward=0.5986
+  >> Decoder Loss: 0.013239
+  >> SAC Q1 Loss: 0.0089, Policy Loss: -0.0231
+Epoch 22 Val Acc: 0.8292 | LR: 0.10000
+Epoch 23/200
+[BestPolicy] Updated best reward: 0.7270
+  Episode 1/10: Reward=0.7270
+  Episode 2/10: Reward=0.7236
+  Episode 3/10: Reward=0.6916
+  Episode 4/10: Reward=0.6826
+  Episode 5/10: Reward=0.6588
+  Episode 6/10: Reward=0.7080
+[BestPolicy] Updated best reward: 0.7354
+  Episode 7/10: Reward=0.7354
+  Episode 8/10: Reward=0.6274
+  Episode 9/10: Reward=0.7056
+  Episode 10/10: Reward=0.6976
+  >> Decoder Loss: 0.012935
+  >> SAC Q1 Loss: 0.0034, Policy Loss: -0.1165
+Epoch 23 Val Acc: 0.7954 | LR: 0.10000
+Epoch 24/200
+  Episode 1/10: Reward=0.6208
+  Episode 2/10: Reward=0.6222
+  Episode 3/10: Reward=0.7170
+  Episode 4/10: Reward=0.6088
+  Episode 5/10: Reward=0.6566
+  Episode 6/10: Reward=0.6192
+  Episode 7/10: Reward=0.7222
+  Episode 8/10: Reward=0.7178
+  Episode 9/10: Reward=0.6856
+  Episode 10/10: Reward=0.6534
+  >> Decoder Loss: 0.011719
+  >> SAC Q1 Loss: 0.0010, Policy Loss: -0.2071
+Epoch 24 Val Acc: 0.8305 | LR: 0.10000
+Epoch 25/200
+  Episode 1/10: Reward=0.6594
+  Episode 2/10: Reward=0.6176
+  Episode 3/10: Reward=0.6848
+  Episode 4/10: Reward=0.7034
+  Episode 5/10: Reward=0.7186
+  Episode 6/10: Reward=0.7030
+  Episode 7/10: Reward=0.6424
+  Episode 8/10: Reward=0.7082
+  Episode 9/10: Reward=0.7008
+  Episode 10/10: Reward=0.5784
+  >> Decoder Loss: 0.010024
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -0.2884
+Epoch 25 Val Acc: 0.7907 | LR: 0.10000
+Epoch 26/200
+  Episode 1/10: Reward=0.6856
+[BestPolicy] Updated best reward: 0.7614
+  Episode 2/10: Reward=0.7614
+  Episode 3/10: Reward=0.7184
+  Episode 4/10: Reward=0.6728
+  Episode 5/10: Reward=0.7530
+  Episode 6/10: Reward=0.6706
+  Episode 7/10: Reward=0.6466
+[BestPolicy] Updated best reward: 0.7636
+  Episode 8/10: Reward=0.7636
+  Episode 9/10: Reward=0.7234
+  Episode 10/10: Reward=0.6376
+  >> Decoder Loss: 0.009226
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -0.3715
+Epoch 26 Val Acc: 0.8176 | LR: 0.10000
+Epoch 27/200
+  Episode 1/10: Reward=0.7540
+[BestPolicy] Updated best reward: 0.7684
+  Episode 2/10: Reward=0.7684
+  Episode 3/10: Reward=0.6874
+  Episode 4/10: Reward=0.6642
+  Episode 5/10: Reward=0.6988
+  Episode 6/10: Reward=0.7356
+  Episode 7/10: Reward=0.6610
+  Episode 8/10: Reward=0.7350
+  Episode 9/10: Reward=0.7506
+  Episode 10/10: Reward=0.7390
+  >> Decoder Loss: 0.008296
+  >> SAC Q1 Loss: 0.0008, Policy Loss: -0.4480
+Epoch 27 Val Acc: 0.8218 | LR: 0.10000
+Epoch 28/200
+  Episode 1/10: Reward=0.6462
+  Episode 2/10: Reward=0.6792
+  Episode 3/10: Reward=0.7308
+  Episode 4/10: Reward=0.7086
+  Episode 5/10: Reward=0.6912
+  Episode 6/10: Reward=0.7496
+  Episode 7/10: Reward=0.6850
+  Episode 8/10: Reward=0.7604
+  Episode 9/10: Reward=0.7620
+  Episode 10/10: Reward=0.6350
+  >> Decoder Loss: 0.007181
+  >> SAC Q1 Loss: 0.0012, Policy Loss: -0.5273
+Epoch 28 Val Acc: 0.8250 | LR: 0.10000
+Epoch 29/200
+[BestPolicy] Updated best reward: 0.7740
+  Episode 1/10: Reward=0.7740
+  Episode 2/10: Reward=0.7420
+  Episode 3/10: Reward=0.7512
+  Episode 4/10: Reward=0.7168
+  Episode 5/10: Reward=0.6570
+  Episode 6/10: Reward=0.7636
+  Episode 7/10: Reward=0.6828
+  Episode 8/10: Reward=0.7428
+  Episode 9/10: Reward=0.7438
+  Episode 10/10: Reward=0.6798
+  >> Decoder Loss: 0.007182
+  >> SAC Q1 Loss: 0.0017, Policy Loss: -0.6045
+Epoch 29 Val Acc: 0.8222 | LR: 0.10000
+Epoch 30/200
+  Episode 1/10: Reward=0.7508
+  Episode 2/10: Reward=0.6002
+  Episode 3/10: Reward=0.7196
+[BestPolicy] Updated best reward: 0.8002
+  Episode 4/10: Reward=0.8002
+[BestPolicy] Updated best reward: 0.8076
+  Episode 5/10: Reward=0.8076
+  Episode 6/10: Reward=0.7534
+  Episode 7/10: Reward=0.7694
+  Episode 8/10: Reward=0.7118
+  Episode 9/10: Reward=0.6676
+  Episode 10/10: Reward=0.7036
+  >> Decoder Loss: 0.006419
+  >> SAC Q1 Loss: 0.0018, Policy Loss: -0.6750
+Epoch 30 Val Acc: 0.8244 | LR: 0.10000
+Epoch 31/200
+  Episode 1/10: Reward=0.7694
+  Episode 2/10: Reward=0.6430
+  Episode 3/10: Reward=0.6972
+  Episode 4/10: Reward=0.6904
+  Episode 5/10: Reward=0.6578
+  Episode 6/10: Reward=0.6404
+  Episode 7/10: Reward=0.7532
+  Episode 8/10: Reward=0.7348
+  Episode 9/10: Reward=0.5836
+  Episode 10/10: Reward=0.5612
+  >> Decoder Loss: 0.006153
+  >> SAC Q1 Loss: 0.0021, Policy Loss: -0.7385
+Epoch 31 Val Acc: 0.8303 | LR: 0.10000
+Epoch 32/200
+  Episode 1/10: Reward=0.6946
+  Episode 2/10: Reward=0.5772
+  Episode 3/10: Reward=0.7688
+  Episode 4/10: Reward=0.6588
+  Episode 5/10: Reward=0.6590
+  Episode 6/10: Reward=0.7478
+  Episode 7/10: Reward=0.7072
+  Episode 8/10: Reward=0.7888
+  Episode 9/10: Reward=0.7058
+  Episode 10/10: Reward=0.7740
+  >> Decoder Loss: 0.004841
+  >> SAC Q1 Loss: 0.0018, Policy Loss: -0.8054
+Epoch 32 Val Acc: 0.8212 | LR: 0.10000
+Epoch 33/200
+  Episode 1/10: Reward=0.7844
+  Episode 2/10: Reward=0.6326
+  Episode 3/10: Reward=0.7794
+  Episode 4/10: Reward=0.7552
+  Episode 5/10: Reward=0.7120
+  Episode 6/10: Reward=0.6584
+  Episode 7/10: Reward=0.7494
+  Episode 8/10: Reward=0.7870
+  Episode 9/10: Reward=0.7290
+  Episode 10/10: Reward=0.7148
+  >> Decoder Loss: 0.005388
+  >> SAC Q1 Loss: 0.0015, Policy Loss: -0.8606
+Epoch 33 Val Acc: 0.8438 | LR: 0.10000
+Epoch 34/200
+  Episode 1/10: Reward=0.7816
+[BestPolicy] Updated best reward: 0.8134
+  Episode 2/10: Reward=0.8134
+  Episode 3/10: Reward=0.7528
+  Episode 4/10: Reward=0.7330
+  Episode 5/10: Reward=0.7660
+  Episode 6/10: Reward=0.8032
+  Episode 7/10: Reward=0.6246
+  Episode 8/10: Reward=0.7696
+  Episode 9/10: Reward=0.7924
+  Episode 10/10: Reward=0.7564
+  >> Decoder Loss: 0.004232
+  >> SAC Q1 Loss: 0.0010, Policy Loss: -0.9125
+Epoch 34 Val Acc: 0.8477 | LR: 0.10000
+Epoch 35/200
+  Episode 1/10: Reward=0.7936
+  Episode 2/10: Reward=0.6640
+  Episode 3/10: Reward=0.7688
+  Episode 4/10: Reward=0.7252
+  Episode 5/10: Reward=0.6668
+  Episode 6/10: Reward=0.7686
+  Episode 7/10: Reward=0.6958
+  Episode 8/10: Reward=0.7232
+  Episode 9/10: Reward=0.7606
+  Episode 10/10: Reward=0.7504
+  >> Decoder Loss: 0.005026
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -0.9658
+Epoch 35 Val Acc: 0.8261 | LR: 0.10000
+Epoch 36/200
+  Episode 1/10: Reward=0.7584
+  Episode 2/10: Reward=0.6650
+  Episode 3/10: Reward=0.6908
+  Episode 4/10: Reward=0.7730
+  Episode 5/10: Reward=0.7768
+  Episode 6/10: Reward=0.7090
+  Episode 7/10: Reward=0.8074
+  Episode 8/10: Reward=0.6956
+  Episode 9/10: Reward=0.7890
+  Episode 10/10: Reward=0.7676
+  >> Decoder Loss: 0.003136
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -1.0106
+Epoch 36 Val Acc: 0.8390 | LR: 0.10000
+Epoch 37/200
+[BestPolicy] Updated best reward: 0.8266
+  Episode 1/10: Reward=0.8266
+  Episode 2/10: Reward=0.7526
+  Episode 3/10: Reward=0.7284
+  Episode 4/10: Reward=0.7834
+  Episode 5/10: Reward=0.7536
+  Episode 6/10: Reward=0.7444
+  Episode 7/10: Reward=0.7720
+  Episode 8/10: Reward=0.7798
+  Episode 9/10: Reward=0.7350
+  Episode 10/10: Reward=0.7418
+  >> Decoder Loss: 0.003591
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.0556
+Epoch 37 Val Acc: 0.8477 | LR: 0.10000
+Epoch 38/200
+  Episode 1/10: Reward=0.7446
+  Episode 2/10: Reward=0.8246
+  Episode 3/10: Reward=0.7652
+  Episode 4/10: Reward=0.7578
+  Episode 5/10: Reward=0.6096
+  Episode 6/10: Reward=0.7254
+  Episode 7/10: Reward=0.7766
+  Episode 8/10: Reward=0.7892
+  Episode 9/10: Reward=0.7506
+  Episode 10/10: Reward=0.8084
+  >> Decoder Loss: 0.003174
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.0969
+Epoch 38 Val Acc: 0.8578 | LR: 0.10000
+Epoch 39/200
+  Episode 1/10: Reward=0.8152
+  Episode 2/10: Reward=0.7052
+  Episode 3/10: Reward=0.7932
+[BestPolicy] Updated best reward: 0.8330
+  Episode 4/10: Reward=0.8330
+  Episode 5/10: Reward=0.6726
+  Episode 6/10: Reward=0.7182
+  Episode 7/10: Reward=0.6922
+  Episode 8/10: Reward=0.7736
+  Episode 9/10: Reward=0.7884
+  Episode 10/10: Reward=0.7692
+  >> Decoder Loss: 0.003276
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.1337
+Epoch 39 Val Acc: 0.8583 | LR: 0.10000
+Epoch 40/200
+  Episode 1/10: Reward=0.8222
+  Episode 2/10: Reward=0.7812
+  Episode 3/10: Reward=0.7132
+  Episode 4/10: Reward=0.7652
+  Episode 5/10: Reward=0.6216
+  Episode 6/10: Reward=0.7852
+  Episode 7/10: Reward=0.8160
+  Episode 8/10: Reward=0.7800
+  Episode 9/10: Reward=0.7766
+  Episode 10/10: Reward=0.7738
+  >> Decoder Loss: 0.002796
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -1.1670
+Epoch 40 Val Acc: 0.8407 | LR: 0.10000
+Epoch 41/200
+  Episode 1/10: Reward=0.6526
+  Episode 2/10: Reward=0.6780
+  Episode 3/10: Reward=0.8216
+  Episode 4/10: Reward=0.7344
+  Episode 5/10: Reward=0.6230
+  Episode 6/10: Reward=0.6742
+  Episode 7/10: Reward=0.7836
+  Episode 8/10: Reward=0.8126
+  Episode 9/10: Reward=0.6512
+  Episode 10/10: Reward=0.7704
+  >> Decoder Loss: 0.002174
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -1.1943
+Epoch 41 Val Acc: 0.8534 | LR: 0.10000
+Epoch 42/200
+  Episode 1/10: Reward=0.8222
+  Episode 2/10: Reward=0.7418
+  Episode 3/10: Reward=0.7138
+  Episode 4/10: Reward=0.6784
+  Episode 5/10: Reward=0.7376
+  Episode 6/10: Reward=0.7318
+  Episode 7/10: Reward=0.7834
+  Episode 8/10: Reward=0.6040
+  Episode 9/10: Reward=0.8022
+[BestPolicy] Updated best reward: 0.8362
+  Episode 10/10: Reward=0.8362
+  >> Decoder Loss: 0.002022
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -1.2232
+Epoch 42 Val Acc: 0.8454 | LR: 0.10000
+Epoch 43/200
+  Episode 1/10: Reward=0.6834
+  Episode 2/10: Reward=0.7576
+  Episode 3/10: Reward=0.7622
+  Episode 4/10: Reward=0.8096
+  Episode 5/10: Reward=0.7146
+  Episode 6/10: Reward=0.7314
+  Episode 7/10: Reward=0.7842
+  Episode 8/10: Reward=0.7068
+  Episode 9/10: Reward=0.7802
+  Episode 10/10: Reward=0.7540
+  >> Decoder Loss: 0.001842
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.2544
+Epoch 43 Val Acc: 0.8489 | LR: 0.10000
+Epoch 44/200
+  Episode 1/10: Reward=0.7202
+  Episode 2/10: Reward=0.7494
+  Episode 3/10: Reward=0.7710
+  Episode 4/10: Reward=0.7674
+  Episode 5/10: Reward=0.8284
+  Episode 6/10: Reward=0.6646
+  Episode 7/10: Reward=0.7704
+  Episode 8/10: Reward=0.6796
+[BestPolicy] Updated best reward: 0.8428
+  Episode 9/10: Reward=0.8428
+  Episode 10/10: Reward=0.6928
+  >> Decoder Loss: 0.001766
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.2814
+Epoch 44 Val Acc: 0.8496 | LR: 0.10000
+Epoch 45/200
+  Episode 1/10: Reward=0.7224
+  Episode 2/10: Reward=0.7032
+  Episode 3/10: Reward=0.6842
+  Episode 4/10: Reward=0.6758
+  Episode 5/10: Reward=0.7986
+  Episode 6/10: Reward=0.7528
+  Episode 7/10: Reward=0.5698
+  Episode 8/10: Reward=0.6742
+  Episode 9/10: Reward=0.7760
+  Episode 10/10: Reward=0.7306
+  >> Decoder Loss: 0.001830
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.3044
+Epoch 45 Val Acc: 0.8658 | LR: 0.10000
+Epoch 46/200
+  Episode 1/10: Reward=0.8350
+  Episode 2/10: Reward=0.5872
+  Episode 3/10: Reward=0.7290
+  Episode 4/10: Reward=0.8076
+  Episode 5/10: Reward=0.7044
+  Episode 6/10: Reward=0.7892
+  Episode 7/10: Reward=0.8368
+  Episode 8/10: Reward=0.7794
+  Episode 9/10: Reward=0.6950
+  Episode 10/10: Reward=0.7220
+  >> Decoder Loss: 0.002172
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.3402
+Epoch 46 Val Acc: 0.8502 | LR: 0.10000
+Epoch 47/200
+  Episode 1/10: Reward=0.6462
+  Episode 2/10: Reward=0.7416
+  Episode 3/10: Reward=0.7168
+  Episode 4/10: Reward=0.7858
+  Episode 5/10: Reward=0.6904
+  Episode 6/10: Reward=0.7830
+  Episode 7/10: Reward=0.7392
+  Episode 8/10: Reward=0.7758
+  Episode 9/10: Reward=0.7910
+  Episode 10/10: Reward=0.7568
+  >> Decoder Loss: 0.001962
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -1.3556
+Epoch 47 Val Acc: 0.8562 | LR: 0.10000
+Epoch 48/200
+  Episode 1/10: Reward=0.7088
+  Episode 2/10: Reward=0.6564
+  Episode 3/10: Reward=0.7842
+[BestPolicy] Updated best reward: 0.8476
+  Episode 4/10: Reward=0.8476
+  Episode 5/10: Reward=0.8080
+  Episode 6/10: Reward=0.7924
+  Episode 7/10: Reward=0.8430
+  Episode 8/10: Reward=0.7960
+  Episode 9/10: Reward=0.7730
+  Episode 10/10: Reward=0.8022
+  >> Decoder Loss: 0.001988
+  >> SAC Q1 Loss: 0.0007, Policy Loss: -1.3619
+Epoch 48 Val Acc: 0.8502 | LR: 0.10000
+Epoch 49/200
+  Episode 1/10: Reward=0.6212
+  Episode 2/10: Reward=0.7576
+  Episode 3/10: Reward=0.7536
+  Episode 4/10: Reward=0.6346
+  Episode 5/10: Reward=0.7994
+  Episode 6/10: Reward=0.7552
+  Episode 7/10: Reward=0.8208
+  Episode 8/10: Reward=0.7136
+  Episode 9/10: Reward=0.7322
+  Episode 10/10: Reward=0.7930
+  >> Decoder Loss: 0.003282
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.3788
+Epoch 49 Val Acc: 0.8526 | LR: 0.10000
+Epoch 50/200
+  Episode 1/10: Reward=0.7208
+  Episode 2/10: Reward=0.6876
+  Episode 3/10: Reward=0.6940
+  Episode 4/10: Reward=0.7304
+  Episode 5/10: Reward=0.7608
+  Episode 6/10: Reward=0.7160
+  Episode 7/10: Reward=0.6996
+  Episode 8/10: Reward=0.8034
+  Episode 9/10: Reward=0.8310
+  Episode 10/10: Reward=0.8164
+  >> Decoder Loss: 0.001687
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.3898
+Epoch 50 Val Acc: 0.8692 | LR: 0.10000
+Epoch 51/200
+  Episode 1/10: Reward=0.8464
+  Episode 2/10: Reward=0.7960
+  Episode 3/10: Reward=0.7844
+  Episode 4/10: Reward=0.8450
+  Episode 5/10: Reward=0.7668
+  Episode 6/10: Reward=0.8416
+  Episode 7/10: Reward=0.8054
+  Episode 8/10: Reward=0.7246
+  Episode 9/10: Reward=0.8238
+  Episode 10/10: Reward=0.7312
+  >> Decoder Loss: 0.001709
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.4006
+Epoch 51 Val Acc: 0.8601 | LR: 0.10000
+Epoch 52/200
+  Episode 1/10: Reward=0.7112
+  Episode 2/10: Reward=0.7280
+  Episode 3/10: Reward=0.7046
+  Episode 4/10: Reward=0.8306
+  Episode 5/10: Reward=0.6994
+  Episode 6/10: Reward=0.8072
+  Episode 7/10: Reward=0.7830
+  Episode 8/10: Reward=0.7602
+  Episode 9/10: Reward=0.7144
+  Episode 10/10: Reward=0.7094
+  >> Decoder Loss: 0.002240
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4024
+Epoch 52 Val Acc: 0.8530 | LR: 0.10000
+Epoch 53/200
+  Episode 1/10: Reward=0.7254
+  Episode 2/10: Reward=0.7614
+  Episode 3/10: Reward=0.8130
+  Episode 4/10: Reward=0.7654
+  Episode 5/10: Reward=0.7628
+[BestPolicy] Updated best reward: 0.8480
+  Episode 6/10: Reward=0.8480
+  Episode 7/10: Reward=0.7084
+  Episode 8/10: Reward=0.7856
+  Episode 9/10: Reward=0.6728
+  Episode 10/10: Reward=0.7818
+  >> Decoder Loss: 0.001214
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4125
+Epoch 53 Val Acc: 0.8459 | LR: 0.10000
+Epoch 54/200
+  Episode 1/10: Reward=0.7672
+  Episode 2/10: Reward=0.7928
+  Episode 3/10: Reward=0.7514
+  Episode 4/10: Reward=0.7716
+  Episode 5/10: Reward=0.7960
+  Episode 6/10: Reward=0.8040
+  Episode 7/10: Reward=0.8450
+  Episode 8/10: Reward=0.7394
+  Episode 9/10: Reward=0.7878
+  Episode 10/10: Reward=0.7658
+  >> Decoder Loss: 0.001410
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4091
+Epoch 54 Val Acc: 0.8478 | LR: 0.10000
+Epoch 55/200
+  Episode 1/10: Reward=0.7098
+  Episode 2/10: Reward=0.6684
+  Episode 3/10: Reward=0.8086
+  Episode 4/10: Reward=0.7232
+  Episode 5/10: Reward=0.8262
+  Episode 6/10: Reward=0.6676
+  Episode 7/10: Reward=0.6954
+[BestPolicy] Updated best reward: 0.8506
+  Episode 8/10: Reward=0.8506
+  Episode 9/10: Reward=0.7400
+  Episode 10/10: Reward=0.7388
+  >> Decoder Loss: 0.001676
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4232
+Epoch 55 Val Acc: 0.8464 | LR: 0.10000
+Epoch 56/200
+  Episode 1/10: Reward=0.6174
+  Episode 2/10: Reward=0.6500
+  Episode 3/10: Reward=0.7524
+  Episode 4/10: Reward=0.7848
+  Episode 5/10: Reward=0.7206
+  Episode 6/10: Reward=0.7862
+  Episode 7/10: Reward=0.7120
+  Episode 8/10: Reward=0.8178
+  Episode 9/10: Reward=0.7416
+  Episode 10/10: Reward=0.7038
+  >> Decoder Loss: 0.003663
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.4220
+Epoch 56 Val Acc: 0.8562 | LR: 0.10000
+Epoch 57/200
+  Episode 1/10: Reward=0.7680
+  Episode 2/10: Reward=0.7776
+  Episode 3/10: Reward=0.7176
+  Episode 4/10: Reward=0.6426
+  Episode 5/10: Reward=0.7188
+  Episode 6/10: Reward=0.8194
+  Episode 7/10: Reward=0.7336
+  Episode 8/10: Reward=0.6696
+  Episode 9/10: Reward=0.7618
+  Episode 10/10: Reward=0.8318
+  >> Decoder Loss: 0.001577
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4342
+Epoch 57 Val Acc: 0.8734 | LR: 0.10000
+Epoch 58/200
+  Episode 1/10: Reward=0.7444
+  Episode 2/10: Reward=0.7266
+  Episode 3/10: Reward=0.8106
+[BestPolicy] Updated best reward: 0.8522
+  Episode 4/10: Reward=0.8522
+  Episode 5/10: Reward=0.6998
+  Episode 6/10: Reward=0.8500
+  Episode 7/10: Reward=0.8086
+  Episode 8/10: Reward=0.7930
+  Episode 9/10: Reward=0.8196
+  Episode 10/10: Reward=0.6942
+  >> Decoder Loss: 0.001049
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4369
+Epoch 58 Val Acc: 0.8480 | LR: 0.10000
+Epoch 59/200
+  Episode 1/10: Reward=0.6210
+  Episode 2/10: Reward=0.8332
+  Episode 3/10: Reward=0.8258
+  Episode 4/10: Reward=0.7652
+  Episode 5/10: Reward=0.7062
+  Episode 6/10: Reward=0.7154
+  Episode 7/10: Reward=0.8262
+  Episode 8/10: Reward=0.6916
+  Episode 9/10: Reward=0.7912
+  Episode 10/10: Reward=0.6626
+  >> Decoder Loss: 0.001465
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4421
+Epoch 59 Val Acc: 0.8644 | LR: 0.10000
+Epoch 60/200
+  Episode 1/10: Reward=0.7518
+  Episode 2/10: Reward=0.7072
+  Episode 3/10: Reward=0.6826
+  Episode 4/10: Reward=0.8450
+  Episode 5/10: Reward=0.7664
+  Episode 6/10: Reward=0.6526
+  Episode 7/10: Reward=0.6610
+  Episode 8/10: Reward=0.8224
+  Episode 9/10: Reward=0.7602
+  Episode 10/10: Reward=0.6948
+  >> Decoder Loss: 0.001499
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4546
+Epoch 60 Val Acc: 0.8472 | LR: 0.10000
+Epoch 61/200
+  Episode 1/10: Reward=0.7732
+  Episode 2/10: Reward=0.7830
+  Episode 3/10: Reward=0.7674
+  Episode 4/10: Reward=0.7168
+  Episode 5/10: Reward=0.7542
+  Episode 6/10: Reward=0.7774
+  Episode 7/10: Reward=0.7630
+  Episode 8/10: Reward=0.6832
+  Episode 9/10: Reward=0.7944
+  Episode 10/10: Reward=0.7514
+  >> Decoder Loss: 0.000925
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4449
+Epoch 61 Val Acc: 0.8657 | LR: 0.10000
+Epoch 62/200
+  Episode 1/10: Reward=0.8068
+  Episode 2/10: Reward=0.7432
+  Episode 3/10: Reward=0.7780
+  Episode 4/10: Reward=0.7692
+  Episode 5/10: Reward=0.7722
+  Episode 6/10: Reward=0.7216
+  Episode 7/10: Reward=0.6124
+  Episode 8/10: Reward=0.7734
+  Episode 9/10: Reward=0.8362
+  Episode 10/10: Reward=0.6260
+  >> Decoder Loss: 0.001442
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4523
+Epoch 62 Val Acc: 0.8564 | LR: 0.10000
+Epoch 63/200
+  Episode 1/10: Reward=0.8106
+  Episode 2/10: Reward=0.8098
+  Episode 3/10: Reward=0.8236
+  Episode 4/10: Reward=0.7844
+  Episode 5/10: Reward=0.8268
+  Episode 6/10: Reward=0.7268
+  Episode 7/10: Reward=0.7144
+  Episode 8/10: Reward=0.6806
+  Episode 9/10: Reward=0.7594
+[BestPolicy] Updated best reward: 0.8572
+  Episode 10/10: Reward=0.8572
+  >> Decoder Loss: 0.001006
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4468
+Epoch 63 Val Acc: 0.8649 | LR: 0.10000
+Epoch 64/200
+  Episode 1/10: Reward=0.7948
+  Episode 2/10: Reward=0.7844
+  Episode 3/10: Reward=0.7976
+  Episode 4/10: Reward=0.7312
+  Episode 5/10: Reward=0.8264
+  Episode 6/10: Reward=0.7024
+  Episode 7/10: Reward=0.7898
+  Episode 8/10: Reward=0.8362
+  Episode 9/10: Reward=0.7914
+  Episode 10/10: Reward=0.7232
+  >> Decoder Loss: 0.001480
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.4469
+Epoch 64 Val Acc: 0.8644 | LR: 0.10000
+Epoch 65/200
+  Episode 1/10: Reward=0.8084
+  Episode 2/10: Reward=0.7722
+  Episode 3/10: Reward=0.7780
+  Episode 4/10: Reward=0.8116
+  Episode 5/10: Reward=0.8022
+  Episode 6/10: Reward=0.7122
+  Episode 7/10: Reward=0.7500
+  Episode 8/10: Reward=0.6976
+  Episode 9/10: Reward=0.8348
+  Episode 10/10: Reward=0.6166
+  >> Decoder Loss: 0.001252
+  >> SAC Q1 Loss: 0.0006, Policy Loss: -1.4454
+Epoch 65 Val Acc: 0.8584 | LR: 0.10000
+Epoch 66/200
+  Episode 1/10: Reward=0.7898
+  Episode 2/10: Reward=0.7308
+  Episode 3/10: Reward=0.7072
+  Episode 4/10: Reward=0.7474
+  Episode 5/10: Reward=0.7774
+  Episode 6/10: Reward=0.7610
+  Episode 7/10: Reward=0.7964
+  Episode 8/10: Reward=0.8482
+  Episode 9/10: Reward=0.7992
+  Episode 10/10: Reward=0.8238
+  >> Decoder Loss: 0.001071
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4486
+Epoch 66 Val Acc: 0.8743 | LR: 0.10000
+Epoch 67/200
+  Episode 1/10: Reward=0.7466
+  Episode 2/10: Reward=0.7692
+  Episode 3/10: Reward=0.7376
+  Episode 4/10: Reward=0.8414
+  Episode 5/10: Reward=0.7754
+  Episode 6/10: Reward=0.7784
+  Episode 7/10: Reward=0.7704
+  Episode 8/10: Reward=0.7136
+  Episode 9/10: Reward=0.8002
+  Episode 10/10: Reward=0.7878
+  >> Decoder Loss: 0.001213
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4483
+Epoch 67 Val Acc: 0.8617 | LR: 0.10000
+Epoch 68/200
+  Episode 1/10: Reward=0.7750
+  Episode 2/10: Reward=0.7876
+  Episode 3/10: Reward=0.7628
+[BestPolicy] Updated best reward: 0.8618
+  Episode 4/10: Reward=0.8618
+  Episode 5/10: Reward=0.8152
+  Episode 6/10: Reward=0.8050
+  Episode 7/10: Reward=0.7076
+  Episode 8/10: Reward=0.7292
+  Episode 9/10: Reward=0.7322
+  Episode 10/10: Reward=0.7084
+  >> Decoder Loss: 0.002481
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4506
+Epoch 68 Val Acc: 0.8534 | LR: 0.10000
+Epoch 69/200
+  Episode 1/10: Reward=0.7854
+  Episode 2/10: Reward=0.8016
+  Episode 3/10: Reward=0.7754
+  Episode 4/10: Reward=0.8146
+  Episode 5/10: Reward=0.7074
+  Episode 6/10: Reward=0.8330
+  Episode 7/10: Reward=0.6946
+  Episode 8/10: Reward=0.7060
+  Episode 9/10: Reward=0.7808
+  Episode 10/10: Reward=0.7458
+  >> Decoder Loss: 0.001396
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4587
+Epoch 69 Val Acc: 0.8647 | LR: 0.10000
+Epoch 70/200
+  Episode 1/10: Reward=0.8430
+[BestPolicy] Updated best reward: 0.8690
+  Episode 2/10: Reward=0.8690
+  Episode 3/10: Reward=0.7726
+  Episode 4/10: Reward=0.6376
+  Episode 5/10: Reward=0.7902
+  Episode 6/10: Reward=0.7628
+  Episode 7/10: Reward=0.7696
+  Episode 8/10: Reward=0.7664
+  Episode 9/10: Reward=0.6376
+  Episode 10/10: Reward=0.5484
+  >> Decoder Loss: 0.001917
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4538
+Epoch 70 Val Acc: 0.8234 | LR: 0.10000
+Epoch 71/200
+  Episode 1/10: Reward=0.7552
+  Episode 2/10: Reward=0.7490
+  Episode 3/10: Reward=0.7558
+  Episode 4/10: Reward=0.7936
+  Episode 5/10: Reward=0.8418
+  Episode 6/10: Reward=0.7830
+  Episode 7/10: Reward=0.7378
+  Episode 8/10: Reward=0.6820
+  Episode 9/10: Reward=0.7548
+  Episode 10/10: Reward=0.6890
+  >> Decoder Loss: 0.001610
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4506
+Epoch 71 Val Acc: 0.8749 | LR: 0.10000
+Epoch 72/200
+  Episode 1/10: Reward=0.8502
+  Episode 2/10: Reward=0.6626
+  Episode 3/10: Reward=0.8664
+  Episode 4/10: Reward=0.6564
+  Episode 5/10: Reward=0.8304
+  Episode 6/10: Reward=0.7798
+  Episode 7/10: Reward=0.7792
+  Episode 8/10: Reward=0.6550
+  Episode 9/10: Reward=0.6476
+  Episode 10/10: Reward=0.8028
+  >> Decoder Loss: 0.002334
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4520
+Epoch 72 Val Acc: 0.8797 | LR: 0.10000
+Epoch 73/200
+  Episode 1/10: Reward=0.7414
+  Episode 2/10: Reward=0.8624
+  Episode 3/10: Reward=0.8636
+  Episode 4/10: Reward=0.7736
+  Episode 5/10: Reward=0.7172
+  Episode 6/10: Reward=0.7492
+  Episode 7/10: Reward=0.7380
+  Episode 8/10: Reward=0.8638
+  Episode 9/10: Reward=0.7778
+  Episode 10/10: Reward=0.7894
+  >> Decoder Loss: 0.001107
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4514
+Epoch 73 Val Acc: 0.8659 | LR: 0.10000
+Epoch 74/200
+  Episode 1/10: Reward=0.7526
+  Episode 2/10: Reward=0.6448
+  Episode 3/10: Reward=0.5332
+  Episode 4/10: Reward=0.7624
+  Episode 5/10: Reward=0.7770
+  Episode 6/10: Reward=0.8136
+  Episode 7/10: Reward=0.7182
+  Episode 8/10: Reward=0.7502
+  Episode 9/10: Reward=0.7536
+  Episode 10/10: Reward=0.7090
+  >> Decoder Loss: 0.000767
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4616
+Epoch 74 Val Acc: 0.8526 | LR: 0.10000
+Epoch 75/200
+  Episode 1/10: Reward=0.5656
+  Episode 2/10: Reward=0.7452
+  Episode 3/10: Reward=0.7598
+  Episode 4/10: Reward=0.7446
+  Episode 5/10: Reward=0.6460
+  Episode 6/10: Reward=0.6730
+  Episode 7/10: Reward=0.7124
+  Episode 8/10: Reward=0.7728
+  Episode 9/10: Reward=0.8466
+  Episode 10/10: Reward=0.7472
+  >> Decoder Loss: 0.000991
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4555
+Epoch 75 Val Acc: 0.8619 | LR: 0.10000
+Epoch 76/200
+  Episode 1/10: Reward=0.6716
+  Episode 2/10: Reward=0.6866
+  Episode 3/10: Reward=0.6232
+  Episode 4/10: Reward=0.8174
+  Episode 5/10: Reward=0.7200
+  Episode 6/10: Reward=0.7158
+  Episode 7/10: Reward=0.8082
+  Episode 8/10: Reward=0.7716
+  Episode 9/10: Reward=0.7474
+  Episode 10/10: Reward=0.8248
+  >> Decoder Loss: 0.000734
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4679
+Epoch 76 Val Acc: 0.8724 | LR: 0.10000
+Epoch 77/200
+  Episode 1/10: Reward=0.7658
+  Episode 2/10: Reward=0.6418
+  Episode 3/10: Reward=0.8306
+  Episode 4/10: Reward=0.7606
+  Episode 5/10: Reward=0.8024
+  Episode 6/10: Reward=0.8014
+  Episode 7/10: Reward=0.7850
+  Episode 8/10: Reward=0.6872
+  Episode 9/10: Reward=0.8392
+  Episode 10/10: Reward=0.8474
+  >> Decoder Loss: 0.000600
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4711
+Epoch 77 Val Acc: 0.8658 | LR: 0.10000
+Epoch 78/200
+  Episode 1/10: Reward=0.7562
+  Episode 2/10: Reward=0.7996
+  Episode 3/10: Reward=0.6828
+  Episode 4/10: Reward=0.6852
+  Episode 5/10: Reward=0.8306
+  Episode 6/10: Reward=0.7578
+  Episode 7/10: Reward=0.6356
+  Episode 8/10: Reward=0.8646
+  Episode 9/10: Reward=0.8088
+  Episode 10/10: Reward=0.7560
+  >> Decoder Loss: 0.000708
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4814
+Epoch 78 Val Acc: 0.8718 | LR: 0.10000
+Epoch 79/200
+  Episode 1/10: Reward=0.6736
+  Episode 2/10: Reward=0.6804
+  Episode 3/10: Reward=0.7818
+  Episode 4/10: Reward=0.6962
+  Episode 5/10: Reward=0.8336
+  Episode 6/10: Reward=0.7586
+  Episode 7/10: Reward=0.7462
+  Episode 8/10: Reward=0.7592
+  Episode 9/10: Reward=0.8600
+  Episode 10/10: Reward=0.8554
+  >> Decoder Loss: 0.001370
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4801
+Epoch 79 Val Acc: 0.8558 | LR: 0.10000
+Epoch 80/200
+  Episode 1/10: Reward=0.7416
+  Episode 2/10: Reward=0.7424
+  Episode 3/10: Reward=0.7154
+  Episode 4/10: Reward=0.8502
+  Episode 5/10: Reward=0.6432
+  Episode 6/10: Reward=0.6936
+  Episode 7/10: Reward=0.6646
+  Episode 8/10: Reward=0.7710
+  Episode 9/10: Reward=0.6996
+  Episode 10/10: Reward=0.8474
+  >> Decoder Loss: 0.001679
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4724
+Epoch 80 Val Acc: 0.8591 | LR: 0.10000
+Epoch 81/200
+  Episode 1/10: Reward=0.7740
+  Episode 2/10: Reward=0.6844
+  Episode 3/10: Reward=0.6404
+  Episode 4/10: Reward=0.7848
+  Episode 5/10: Reward=0.7410
+  Episode 6/10: Reward=0.8338
+  Episode 7/10: Reward=0.7844
+  Episode 8/10: Reward=0.7632
+  Episode 9/10: Reward=0.7080
+  Episode 10/10: Reward=0.7376
+  >> Decoder Loss: 0.000560
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4710
+Epoch 81 Val Acc: 0.8744 | LR: 0.10000
+Epoch 82/200
+  Episode 1/10: Reward=0.6398
+  Episode 2/10: Reward=0.6756
+  Episode 3/10: Reward=0.7920
+  Episode 4/10: Reward=0.8388
+  Episode 5/10: Reward=0.7892
+  Episode 6/10: Reward=0.6414
+  Episode 7/10: Reward=0.6590
+  Episode 8/10: Reward=0.7630
+  Episode 9/10: Reward=0.7684
+  Episode 10/10: Reward=0.7480
+  >> Decoder Loss: 0.000607
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4734
+Epoch 82 Val Acc: 0.8767 | LR: 0.10000
+Epoch 83/200
+  Episode 1/10: Reward=0.7696
+  Episode 2/10: Reward=0.6422
+  Episode 3/10: Reward=0.5918
+  Episode 4/10: Reward=0.7918
+  Episode 5/10: Reward=0.7612
+  Episode 6/10: Reward=0.6316
+  Episode 7/10: Reward=0.8086
+  Episode 8/10: Reward=0.8064
+  Episode 9/10: Reward=0.8050
+  Episode 10/10: Reward=0.8084
+  >> Decoder Loss: 0.001267
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4780
+Epoch 83 Val Acc: 0.8759 | LR: 0.10000
+Epoch 84/200
+  Episode 1/10: Reward=0.8340
+  Episode 2/10: Reward=0.7306
+  Episode 3/10: Reward=0.7594
+  Episode 4/10: Reward=0.5898
+  Episode 5/10: Reward=0.6294
+  Episode 6/10: Reward=0.6334
+  Episode 7/10: Reward=0.7694
+  Episode 8/10: Reward=0.8038
+  Episode 9/10: Reward=0.7588
+  Episode 10/10: Reward=0.7154
+  >> Decoder Loss: 0.000462
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4730
+Epoch 84 Val Acc: 0.8656 | LR: 0.10000
+Epoch 85/200
+  Episode 1/10: Reward=0.8358
+  Episode 2/10: Reward=0.4946
+  Episode 3/10: Reward=0.7598
+  Episode 4/10: Reward=0.6894
+  Episode 5/10: Reward=0.7506
+  Episode 6/10: Reward=0.7940
+  Episode 7/10: Reward=0.6942
+  Episode 8/10: Reward=0.7180
+  Episode 9/10: Reward=0.6266
+  Episode 10/10: Reward=0.6168
+  >> Decoder Loss: 0.000599
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4736
+Epoch 85 Val Acc: 0.8538 | LR: 0.10000
+Epoch 86/200
+  Episode 1/10: Reward=0.8432
+  Episode 2/10: Reward=0.8042
+  Episode 3/10: Reward=0.7708
+  Episode 4/10: Reward=0.5552
+  Episode 5/10: Reward=0.7684
+  Episode 6/10: Reward=0.8004
+  Episode 7/10: Reward=0.7392
+  Episode 8/10: Reward=0.7800
+  Episode 9/10: Reward=0.7678
+  Episode 10/10: Reward=0.7874
+  >> Decoder Loss: 0.000639
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4745
+Epoch 86 Val Acc: 0.8664 | LR: 0.10000
+Epoch 87/200
+  Episode 1/10: Reward=0.6590
+  Episode 2/10: Reward=0.7348
+  Episode 3/10: Reward=0.6484
+  Episode 4/10: Reward=0.8126
+  Episode 5/10: Reward=0.7336
+  Episode 6/10: Reward=0.8154
+  Episode 7/10: Reward=0.6810
+  Episode 8/10: Reward=0.6960
+  Episode 9/10: Reward=0.6446
+  Episode 10/10: Reward=0.7256
+  >> Decoder Loss: 0.000308
+  >> SAC Q1 Loss: 0.0004, Policy Loss: -1.4685
+Epoch 87 Val Acc: 0.8596 | LR: 0.10000
+Epoch 88/200
+  Episode 1/10: Reward=0.7544
+  Episode 2/10: Reward=0.7202
+  Episode 3/10: Reward=0.5824
+  Episode 4/10: Reward=0.7236
+  Episode 5/10: Reward=0.5810
+  Episode 6/10: Reward=0.7814
+  Episode 7/10: Reward=0.8396
+  Episode 8/10: Reward=0.6460
+  Episode 9/10: Reward=0.6648
+  Episode 10/10: Reward=0.6678
+  >> Decoder Loss: 0.000347
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4737
+Epoch 88 Val Acc: 0.8827 | LR: 0.10000
+Epoch 89/200
+  Episode 1/10: Reward=0.7914
+  Episode 2/10: Reward=0.8386
+  Episode 3/10: Reward=0.6812
+  Episode 4/10: Reward=0.7886
+  Episode 5/10: Reward=0.6988
+  Episode 6/10: Reward=0.6330
+  Episode 7/10: Reward=0.7388
+  Episode 8/10: Reward=0.7300
+  Episode 9/10: Reward=0.6640
+  Episode 10/10: Reward=0.7824
+  >> Decoder Loss: 0.000456
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4688
+Epoch 89 Val Acc: 0.8486 | LR: 0.10000
+Epoch 90/200
+  Episode 1/10: Reward=0.8154
+  Episode 2/10: Reward=0.6616
+  Episode 3/10: Reward=0.7822
+  Episode 4/10: Reward=0.7610
+  Episode 5/10: Reward=0.7448
+  Episode 6/10: Reward=0.8566
+  Episode 7/10: Reward=0.4998
+  Episode 8/10: Reward=0.8088
+  Episode 9/10: Reward=0.7294
+  Episode 10/10: Reward=0.7770
+  >> Decoder Loss: 0.000389
+  >> SAC Q1 Loss: 0.0005, Policy Loss: -1.4678
+Epoch 90 Val Acc: 0.8627 | LR: 0.10000
+
+=== [Phase 4] Weights Training with Lalign (Alignment) ===
+  >> Best policy loaded. Applying Soft Alignment...
+Epoch 91/200 Val Acc: 0.8584
+Epoch 92/200 Val Acc: 0.8669
+Epoch 93/200 Val Acc: 0.8621
+Epoch 94/200 Val Acc: 0.8568
+Epoch 95/200 Val Acc: 0.8824
+Epoch 96/200 Val Acc: 0.8658
+Epoch 97/200 Val Acc: 0.8643
+Epoch 98/200 Val Acc: 0.8516
+Epoch 99/200 Val Acc: 0.8527
+Epoch 100/200 Val Acc: 0.8603
+Epoch 101/200 Val Acc: 0.8423
+Epoch 102/200 Val Acc: 0.8580
+Epoch 103/200 Val Acc: 0.8686
+Epoch 104/200 Val Acc: 0.8736
+Epoch 105/200 Val Acc: 0.8672
+Epoch 106/200 Val Acc: 0.8499
+Epoch 107/200 Val Acc: 0.8515
+Epoch 108/200 Val Acc: 0.8745
+Epoch 109/200 Val Acc: 0.8567
+Epoch 110/200 Val Acc: 0.8604
+Epoch 111/200 Val Acc: 0.9159
+Epoch 112/200 Val Acc: 0.9212
+Epoch 113/200 Val Acc: 0.9222
+Epoch 114/200 Val Acc: 0.9207
+Epoch 115/200 Val Acc: 0.9223
+Epoch 116/200 Val Acc: 0.9220
+Epoch 117/200 Val Acc: 0.9232
+Epoch 118/200 Val Acc: 0.9231
+Epoch 119/200 Val Acc: 0.9221
+Epoch 120/200 Val Acc: 0.9224
+Epoch 121/200 Val Acc: 0.9224
+Epoch 122/200 Val Acc: 0.9225
+Epoch 123/200 Val Acc: 0.9252
+Epoch 124/200 Val Acc: 0.9240
+Epoch 125/200 Val Acc: 0.9229
+Epoch 126/200 Val Acc: 0.9236
+Epoch 127/200 Val Acc: 0.9228
+Epoch 128/200 Val Acc: 0.9212
+Epoch 129/200 Val Acc: 0.9225
+Epoch 130/200 Val Acc: 0.9234
+Epoch 131/200 Val Acc: 0.9234
+Epoch 132/200 Val Acc: 0.9226
+Epoch 133/200 Val Acc: 0.9219
+Epoch 134/200 Val Acc: 0.9233
+Epoch 135/200 Val Acc: 0.9229
+Epoch 136/200 Val Acc: 0.9239
+Epoch 137/200 Val Acc: 0.9240
+Epoch 138/200 Val Acc: 0.9242
+Epoch 139/200 Val Acc: 0.9235
+Epoch 140/200 Val Acc: 0.9242
+Epoch 141/200 Val Acc: 0.9244
+Epoch 142/200 Val Acc: 0.9225
+Epoch 143/200 Val Acc: 0.9233
+Epoch 144/200 Val Acc: 0.9222
+Epoch 145/200 Val Acc: 0.9228
+Epoch 146/200 Val Acc: 0.9204
+Epoch 147/200 Val Acc: 0.9227
+Epoch 148/200 Val Acc: 0.9243
+Epoch 149/200 Val Acc: 0.9231
+Epoch 150/200 Val Acc: 0.9253
+Epoch 151/200 Val Acc: 0.9215
+Epoch 152/200 Val Acc: 0.9235
+Epoch 153/200 Val Acc: 0.9225
+Epoch 154/200 Val Acc: 0.9251
+Epoch 155/200 Val Acc: 0.9243
+Epoch 156/200 Val Acc: 0.9225
+Epoch 157/200 Val Acc: 0.9233
+Epoch 158/200 Val Acc: 0.9228
+Epoch 159/200 Val Acc: 0.9224
+Epoch 160/200 Val Acc: 0.9230
+Epoch 161/200 Val Acc: 0.9244
+Epoch 162/200 Val Acc: 0.9239
+Epoch 163/200 Val Acc: 0.9244
+Epoch 164/200 Val Acc: 0.9245
+Epoch 165/200 Val Acc: 0.9250
+Epoch 166/200 Val Acc: 0.9256
+Epoch 167/200 Val Acc: 0.9244
+Epoch 168/200 Val Acc: 0.9240
+Epoch 169/200 Val Acc: 0.9245
+Epoch 170/200 Val Acc: 0.9251
+Epoch 171/200 Val Acc: 0.9258
+Epoch 172/200 Val Acc: 0.9257
+Epoch 173/200 Val Acc: 0.9253
+Epoch 174/200 Val Acc: 0.9260
+Epoch 175/200 Val Acc: 0.9265
+Epoch 176/200 Val Acc: 0.9263
+Epoch 177/200 Val Acc: 0.9259
+Epoch 178/200 Val Acc: 0.9267
+Epoch 179/200 Val Acc: 0.9255
+Epoch 180/200 Val Acc: 0.9257
+Epoch 181/200 Val Acc: 0.9250
+Epoch 182/200 Val Acc: 0.9261
+Epoch 183/200 Val Acc: 0.9252
+Epoch 184/200 Val Acc: 0.9245
+Epoch 185/200 Val Acc: 0.9264
+Epoch 186/200 Val Acc: 0.9266
+Epoch 187/200 Val Acc: 0.9264
+Epoch 188/200 Val Acc: 0.9265
+Epoch 189/200 Val Acc: 0.9263
+Epoch 190/200 Val Acc: 0.9257
+Epoch 191/200 Val Acc: 0.9268
+Epoch 192/200 Val Acc: 0.9272
+Epoch 193/200 Val Acc: 0.9272
+Epoch 194/200 Val Acc: 0.9270
+Epoch 195/200 Val Acc: 0.9277
+Epoch 196/200 Val Acc: 0.9276
+Epoch 197/200 Val Acc: 0.9267
+Epoch 198/200 Val Acc: 0.9259
+Epoch 199/200 Val Acc: 0.9261
+Epoch 200/200 Val Acc: 0.9266
+
+=== [Phase 5] Final Fine-tuning ===
+Training Complete.

@@ -1,0 +1,98 @@
+# ==========================================
+# General & Hardware
+# ==========================================
+seed: 42
+gpu_id: 5
+device: cuda
+save_dir: checkpoints/full  # 结果保存路径
+save_interval: 20                            # 每 20 epoch 保存一次模型
+eval_interval: 1                             # 建议每 epoch 都看一眼测试集精度
+log_interval: 1
+
+# 物理约束设置
+hard_ratio_limit: 0.8
+min_channels: 4
+
+# ==========================================
+# Data & Model Architecture
+# ==========================================
+dataset: cifar10
+data_root: ./data
+arch: resnet56                # 对应 src/models/resnet_cifar.py
+pretrained: false
+input_shape: [1, 3, 32, 32]   # 用于计算 FLOPs 的输入尺寸
+
+# ==========================================
+# Optimization (Global Weights Training)
+# ==========================================
+batch_size: 128
+lr: 0.1                       # 初始学习率 (SGD)
+weight_decay: 0.0001
+momentum: 0.9
+
+# 注意：finetune_lr 在这里不再需要，
+# 因为我们使用 MultiStepLR 调度器，它会自动在特定 epoch 将 lr 衰减到 0.01 和 0.001
+
+# ==========================================
+# Pruning Schedule (Total ~200 Epochs)
+# ==========================================
+# 1. Warmup (20): 先把 Base Model 训到 ~85% 精度，不然 Agent 也是瞎猜
+warmup_epochs: 10
+
+# 2. Fill Buffer (10): Agent 随机探索，填满 Replay Buffer
+fill_epochs: 10
+
+# 3. Agent Training (50): 联合训练，Agent 学习剪枝策略，同时微调权重
+agent_epochs: 70
+
+# 4. Alignment: 固定最佳 Mask，用 Lalign 强力对齐权重
+weights_only_epochs: 110
+
+# 5. Finetune: 最后冲刺，彻底恢复精度
+finetune_epochs: 0
+
+# 校验总数 (200)，设为 0 则自动计算
+total_epochs: 200
+
+# ==========================================
+# Pruning Environment Settings
+# ==========================================
+target_prune_rate: 0.5         # 【核心】目标剪掉 50% FLOPs
+K_train_steps: 100             # 【核心】Agent 每次决策后，微调 100 个 step 再算 Reward
+                               # 设大一点(100)能让 Reward 更准确，但训练会变慢。
+                               # 如果觉得太慢，可以改回 50。
+
+episodes_per_epoch: 10         # 每个 Epoch 采集 10 条剪枝轨迹 (P)
+decoder_updates_per_epoch: 100
+agent_updates_per_epoch: 200
+
+# ==========================================
+# SAC Agent Hyperparameters
+# ==========================================
+replay_size: 10000            # 经验回放池大小 10000/(27*10)=37epoch
+batch_sac: 64
+actor_lr: 0.0001
+critic_lr: 0.001
+tau: 0.005                     # 软更新系数
+gamma: 0.99                    # 折扣因子
+automatic_entropy_tuning: false  # 关闭自动调整
+alpha: 0.1                       # 固定为 0.1
+
+# ==========================================
+# Environment Model (GRU + Decoder)
+
+# ==========================================
+z_dim: 128                     # Embedding 维度
+decoder_lr: 0.001              # 预测 Reward 的模型的学习率
+
+# ==========================================
+# Alignment Regularization (Soft Pruning)
+# ==========================================
+lalign_beta: 0.00005            # 对齐损失的权重 (1e-4)
+weight_train_epochs_per_weights_phase: 1
+
+
+# 【新增】一致性正则化强度
+# 太大: 策略死板，学得慢
+# 太小: 没效果，继续震荡
+consistency_beta: 500

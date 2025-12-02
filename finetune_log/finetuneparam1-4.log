@@ -1,0 +1,231 @@
+nohup: ignoring input
+=== Starting Finetuning (Stage 2) ===
+Config: configs/param1-4.yaml
+Checkpoint Dir: checkpoints/param1-4
+ModelWrapper: Detected 27 prunable blocks (Conv1+Conv2 pairs).
+>> Loading Stage 1 weights from checkpoints/param1-4/student_model.pth
+>> Pruning Mask loaded. Applying initial pruning...
+>> Optimizer reset: LR=0.1, Epochs=200, WD=0.0001
+Epoch 1/200 | Loss: 0.3550 | Val Acc: 0.8744 | LR: 0.10000
+   >> New Best Saved! (0.8744)
+Epoch 2/200 | Loss: 0.2510 | Val Acc: 0.8744 | LR: 0.10000
+Epoch 3/200 | Loss: 0.2412 | Val Acc: 0.8446 | LR: 0.10000
+Epoch 4/200 | Loss: 0.2330 | Val Acc: 0.8747 | LR: 0.10000
+   >> New Best Saved! (0.8747)
+Epoch 5/200 | Loss: 0.2172 | Val Acc: 0.8697 | LR: 0.10000
+Epoch 6/200 | Loss: 0.2159 | Val Acc: 0.8774 | LR: 0.10000
+   >> New Best Saved! (0.8774)
+Epoch 7/200 | Loss: 0.2161 | Val Acc: 0.8681 | LR: 0.10000
+Epoch 8/200 | Loss: 0.2116 | Val Acc: 0.8648 | LR: 0.10000
+Epoch 9/200 | Loss: 0.2101 | Val Acc: 0.8568 | LR: 0.10000
+Epoch 10/200 | Loss: 0.2018 | Val Acc: 0.8748 | LR: 0.10000
+Epoch 11/200 | Loss: 0.2054 | Val Acc: 0.8641 | LR: 0.10000
+Epoch 12/200 | Loss: 0.1978 | Val Acc: 0.8643 | LR: 0.10000
+Epoch 13/200 | Loss: 0.1987 | Val Acc: 0.8708 | LR: 0.10000
+Epoch 14/200 | Loss: 0.1982 | Val Acc: 0.8821 | LR: 0.10000
+   >> New Best Saved! (0.8821)
+Epoch 15/200 | Loss: 0.1948 | Val Acc: 0.8818 | LR: 0.10000
+Epoch 16/200 | Loss: 0.2018 | Val Acc: 0.8784 | LR: 0.10000
+Epoch 17/200 | Loss: 0.1938 | Val Acc: 0.8785 | LR: 0.10000
+Epoch 18/200 | Loss: 0.1957 | Val Acc: 0.8798 | LR: 0.10000
+Epoch 19/200 | Loss: 0.1897 | Val Acc: 0.8731 | LR: 0.10000
+Epoch 20/200 | Loss: 0.1861 | Val Acc: 0.8669 | LR: 0.10000
+Epoch 21/200 | Loss: 0.1890 | Val Acc: 0.8726 | LR: 0.10000
+Epoch 22/200 | Loss: 0.1871 | Val Acc: 0.8658 | LR: 0.10000
+Epoch 23/200 | Loss: 0.1939 | Val Acc: 0.8502 | LR: 0.10000
+Epoch 24/200 | Loss: 0.1878 | Val Acc: 0.8711 | LR: 0.10000
+Epoch 25/200 | Loss: 0.1885 | Val Acc: 0.8681 | LR: 0.10000
+Epoch 26/200 | Loss: 0.1832 | Val Acc: 0.8614 | LR: 0.10000
+Epoch 27/200 | Loss: 0.1802 | Val Acc: 0.8905 | LR: 0.10000
+   >> New Best Saved! (0.8905)
+Epoch 28/200 | Loss: 0.1794 | Val Acc: 0.8691 | LR: 0.10000
+Epoch 29/200 | Loss: 0.1812 | Val Acc: 0.8757 | LR: 0.10000
+Epoch 30/200 | Loss: 0.1859 | Val Acc: 0.8738 | LR: 0.10000
+Epoch 31/200 | Loss: 0.1858 | Val Acc: 0.8625 | LR: 0.10000
+Epoch 32/200 | Loss: 0.1809 | Val Acc: 0.8858 | LR: 0.10000
+Epoch 33/200 | Loss: 0.1792 | Val Acc: 0.8902 | LR: 0.10000
+Epoch 34/200 | Loss: 0.1825 | Val Acc: 0.8894 | LR: 0.10000
+Epoch 35/200 | Loss: 0.1823 | Val Acc: 0.8865 | LR: 0.10000
+Epoch 36/200 | Loss: 0.1771 | Val Acc: 0.8714 | LR: 0.10000
+Epoch 37/200 | Loss: 0.1823 | Val Acc: 0.8813 | LR: 0.10000
+Epoch 38/200 | Loss: 0.1745 | Val Acc: 0.8761 | LR: 0.10000
+Epoch 39/200 | Loss: 0.1804 | Val Acc: 0.8807 | LR: 0.10000
+Epoch 40/200 | Loss: 0.1786 | Val Acc: 0.8899 | LR: 0.10000
+Epoch 41/200 | Loss: 0.1841 | Val Acc: 0.8905 | LR: 0.10000
+Epoch 42/200 | Loss: 0.1810 | Val Acc: 0.8748 | LR: 0.10000
+Epoch 43/200 | Loss: 0.1698 | Val Acc: 0.8823 | LR: 0.10000
+Epoch 44/200 | Loss: 0.1804 | Val Acc: 0.8866 | LR: 0.10000
+Epoch 45/200 | Loss: 0.1778 | Val Acc: 0.8621 | LR: 0.10000
+Epoch 46/200 | Loss: 0.1828 | Val Acc: 0.8714 | LR: 0.10000
+Epoch 47/200 | Loss: 0.1721 | Val Acc: 0.8676 | LR: 0.10000
+Epoch 48/200 | Loss: 0.1753 | Val Acc: 0.8464 | LR: 0.10000
+Epoch 49/200 | Loss: 0.1796 | Val Acc: 0.8798 | LR: 0.10000
+Epoch 50/200 | Loss: 0.1735 | Val Acc: 0.8595 | LR: 0.10000
+Epoch 51/200 | Loss: 0.1707 | Val Acc: 0.8814 | LR: 0.10000
+Epoch 52/200 | Loss: 0.1732 | Val Acc: 0.8743 | LR: 0.10000
+Epoch 53/200 | Loss: 0.1759 | Val Acc: 0.8846 | LR: 0.10000
+Epoch 54/200 | Loss: 0.1696 | Val Acc: 0.8750 | LR: 0.10000
+Epoch 55/200 | Loss: 0.1705 | Val Acc: 0.8425 | LR: 0.10000
+Epoch 56/200 | Loss: 0.1774 | Val Acc: 0.8679 | LR: 0.10000
+Epoch 57/200 | Loss: 0.1738 | Val Acc: 0.8787 | LR: 0.10000
+Epoch 58/200 | Loss: 0.1726 | Val Acc: 0.8868 | LR: 0.10000
+Epoch 59/200 | Loss: 0.1736 | Val Acc: 0.8801 | LR: 0.10000
+Epoch 60/200 | Loss: 0.1730 | Val Acc: 0.8921 | LR: 0.10000
+   >> New Best Saved! (0.8921)
+Epoch 61/200 | Loss: 0.1746 | Val Acc: 0.8893 | LR: 0.10000
+Epoch 62/200 | Loss: 0.1730 | Val Acc: 0.8924 | LR: 0.10000
+   >> New Best Saved! (0.8924)
+Epoch 63/200 | Loss: 0.1741 | Val Acc: 0.8728 | LR: 0.10000
+Epoch 64/200 | Loss: 0.1732 | Val Acc: 0.8751 | LR: 0.10000
+Epoch 65/200 | Loss: 0.1760 | Val Acc: 0.8889 | LR: 0.10000
+Epoch 66/200 | Loss: 0.1699 | Val Acc: 0.8714 | LR: 0.10000
+Epoch 67/200 | Loss: 0.1733 | Val Acc: 0.8690 | LR: 0.10000
+Epoch 68/200 | Loss: 0.1722 | Val Acc: 0.8955 | LR: 0.10000
+   >> New Best Saved! (0.8955)
+Epoch 69/200 | Loss: 0.1716 | Val Acc: 0.8730 | LR: 0.10000
+Epoch 70/200 | Loss: 0.1667 | Val Acc: 0.8713 | LR: 0.10000
+Epoch 71/200 | Loss: 0.1660 | Val Acc: 0.8671 | LR: 0.10000
+Epoch 72/200 | Loss: 0.1770 | Val Acc: 0.8907 | LR: 0.10000
+Epoch 73/200 | Loss: 0.1676 | Val Acc: 0.8873 | LR: 0.10000
+Epoch 74/200 | Loss: 0.1672 | Val Acc: 0.8735 | LR: 0.10000
+Epoch 75/200 | Loss: 0.1718 | Val Acc: 0.8684 | LR: 0.10000
+Epoch 76/200 | Loss: 0.1726 | Val Acc: 0.8721 | LR: 0.10000
+Epoch 77/200 | Loss: 0.1663 | Val Acc: 0.8756 | LR: 0.10000
+Epoch 78/200 | Loss: 0.1683 | Val Acc: 0.8665 | LR: 0.10000
+Epoch 79/200 | Loss: 0.1724 | Val Acc: 0.8906 | LR: 0.10000
+Epoch 80/200 | Loss: 0.1748 | Val Acc: 0.8786 | LR: 0.10000
+Epoch 81/200 | Loss: 0.1668 | Val Acc: 0.8795 | LR: 0.10000
+Epoch 82/200 | Loss: 0.1661 | Val Acc: 0.8835 | LR: 0.10000
+Epoch 83/200 | Loss: 0.1622 | Val Acc: 0.8535 | LR: 0.10000
+Epoch 84/200 | Loss: 0.1668 | Val Acc: 0.8618 | LR: 0.10000
+Epoch 85/200 | Loss: 0.1648 | Val Acc: 0.8942 | LR: 0.10000
+Epoch 86/200 | Loss: 0.1740 | Val Acc: 0.8752 | LR: 0.10000
+Epoch 87/200 | Loss: 0.1665 | Val Acc: 0.8754 | LR: 0.10000
+Epoch 88/200 | Loss: 0.1720 | Val Acc: 0.8698 | LR: 0.10000
+Epoch 89/200 | Loss: 0.1711 | Val Acc: 0.8639 | LR: 0.10000
+Epoch 90/200 | Loss: 0.1666 | Val Acc: 0.8784 | LR: 0.10000
+Epoch 91/200 | Loss: 0.1646 | Val Acc: 0.8825 | LR: 0.10000
+Epoch 92/200 | Loss: 0.1655 | Val Acc: 0.8762 | LR: 0.10000
+Epoch 93/200 | Loss: 0.1643 | Val Acc: 0.8898 | LR: 0.10000
+Epoch 94/200 | Loss: 0.1665 | Val Acc: 0.8827 | LR: 0.10000
+Epoch 95/200 | Loss: 0.1680 | Val Acc: 0.8870 | LR: 0.10000
+Epoch 96/200 | Loss: 0.1652 | Val Acc: 0.8722 | LR: 0.10000
+Epoch 97/200 | Loss: 0.1717 | Val Acc: 0.8815 | LR: 0.10000
+Epoch 98/200 | Loss: 0.1675 | Val Acc: 0.8819 | LR: 0.10000
+Epoch 99/200 | Loss: 0.1632 | Val Acc: 0.8942 | LR: 0.10000
+Epoch 100/200 | Loss: 0.1673 | Val Acc: 0.8817 | LR: 0.01000
+Epoch 101/200 | Loss: 0.0895 | Val Acc: 0.9204 | LR: 0.01000
+   >> New Best Saved! (0.9204)
+Epoch 102/200 | Loss: 0.0622 | Val Acc: 0.9239 | LR: 0.01000
+   >> New Best Saved! (0.9239)
+Epoch 103/200 | Loss: 0.0528 | Val Acc: 0.9251 | LR: 0.01000
+   >> New Best Saved! (0.9251)
+Epoch 104/200 | Loss: 0.0471 | Val Acc: 0.9251 | LR: 0.01000
+Epoch 105/200 | Loss: 0.0433 | Val Acc: 0.9250 | LR: 0.01000
+Epoch 106/200 | Loss: 0.0377 | Val Acc: 0.9276 | LR: 0.01000
+   >> New Best Saved! (0.9276)
+Epoch 107/200 | Loss: 0.0352 | Val Acc: 0.9266 | LR: 0.01000
+Epoch 108/200 | Loss: 0.0334 | Val Acc: 0.9275 | LR: 0.01000
+Epoch 109/200 | Loss: 0.0315 | Val Acc: 0.9279 | LR: 0.01000
+   >> New Best Saved! (0.9279)
+Epoch 110/200 | Loss: 0.0287 | Val Acc: 0.9284 | LR: 0.01000
+   >> New Best Saved! (0.9284)
+Epoch 111/200 | Loss: 0.0280 | Val Acc: 0.9281 | LR: 0.01000
+Epoch 112/200 | Loss: 0.0247 | Val Acc: 0.9296 | LR: 0.01000
+   >> New Best Saved! (0.9296)
+Epoch 113/200 | Loss: 0.0248 | Val Acc: 0.9277 | LR: 0.01000
+Epoch 114/200 | Loss: 0.0239 | Val Acc: 0.9281 | LR: 0.01000
+Epoch 115/200 | Loss: 0.0223 | Val Acc: 0.9278 | LR: 0.01000
+Epoch 116/200 | Loss: 0.0229 | Val Acc: 0.9284 | LR: 0.01000
+Epoch 117/200 | Loss: 0.0204 | Val Acc: 0.9294 | LR: 0.01000
+Epoch 118/200 | Loss: 0.0198 | Val Acc: 0.9289 | LR: 0.01000
+Epoch 119/200 | Loss: 0.0183 | Val Acc: 0.9275 | LR: 0.01000
+Epoch 120/200 | Loss: 0.0182 | Val Acc: 0.9293 | LR: 0.01000
+Epoch 121/200 | Loss: 0.0166 | Val Acc: 0.9283 | LR: 0.01000
+Epoch 122/200 | Loss: 0.0155 | Val Acc: 0.9282 | LR: 0.01000
+Epoch 123/200 | Loss: 0.0175 | Val Acc: 0.9271 | LR: 0.01000
+Epoch 124/200 | Loss: 0.0150 | Val Acc: 0.9277 | LR: 0.01000
+Epoch 125/200 | Loss: 0.0156 | Val Acc: 0.9283 | LR: 0.01000
+Epoch 126/200 | Loss: 0.0153 | Val Acc: 0.9296 | LR: 0.01000
+Epoch 127/200 | Loss: 0.0141 | Val Acc: 0.9285 | LR: 0.01000
+Epoch 128/200 | Loss: 0.0129 | Val Acc: 0.9295 | LR: 0.01000
+Epoch 129/200 | Loss: 0.0126 | Val Acc: 0.9281 | LR: 0.01000
+Epoch 130/200 | Loss: 0.0132 | Val Acc: 0.9309 | LR: 0.01000
+   >> New Best Saved! (0.9309)
+Epoch 131/200 | Loss: 0.0127 | Val Acc: 0.9311 | LR: 0.01000
+   >> New Best Saved! (0.9311)
+Epoch 132/200 | Loss: 0.0110 | Val Acc: 0.9300 | LR: 0.01000
+Epoch 133/200 | Loss: 0.0127 | Val Acc: 0.9310 | LR: 0.01000
+Epoch 134/200 | Loss: 0.0113 | Val Acc: 0.9295 | LR: 0.01000
+Epoch 135/200 | Loss: 0.0126 | Val Acc: 0.9311 | LR: 0.01000
+Epoch 136/200 | Loss: 0.0115 | Val Acc: 0.9288 | LR: 0.01000
+Epoch 137/200 | Loss: 0.0116 | Val Acc: 0.9303 | LR: 0.01000
+Epoch 138/200 | Loss: 0.0108 | Val Acc: 0.9291 | LR: 0.01000
+Epoch 139/200 | Loss: 0.0093 | Val Acc: 0.9291 | LR: 0.01000
+Epoch 140/200 | Loss: 0.0104 | Val Acc: 0.9289 | LR: 0.01000
+Epoch 141/200 | Loss: 0.0103 | Val Acc: 0.9303 | LR: 0.01000
+Epoch 142/200 | Loss: 0.0103 | Val Acc: 0.9306 | LR: 0.01000
+Epoch 143/200 | Loss: 0.0098 | Val Acc: 0.9289 | LR: 0.01000
+Epoch 144/200 | Loss: 0.0101 | Val Acc: 0.9296 | LR: 0.01000
+Epoch 145/200 | Loss: 0.0096 | Val Acc: 0.9290 | LR: 0.01000
+Epoch 146/200 | Loss: 0.0099 | Val Acc: 0.9298 | LR: 0.01000
+Epoch 147/200 | Loss: 0.0091 | Val Acc: 0.9302 | LR: 0.01000
+Epoch 148/200 | Loss: 0.0095 | Val Acc: 0.9287 | LR: 0.01000
+Epoch 149/200 | Loss: 0.0092 | Val Acc: 0.9309 | LR: 0.01000
+Epoch 150/200 | Loss: 0.0084 | Val Acc: 0.9286 | LR: 0.00100
+Epoch 151/200 | Loss: 0.0086 | Val Acc: 0.9297 | LR: 0.00100
+Epoch 152/200 | Loss: 0.0079 | Val Acc: 0.9300 | LR: 0.00100
+Epoch 153/200 | Loss: 0.0071 | Val Acc: 0.9310 | LR: 0.00100
+Epoch 154/200 | Loss: 0.0063 | Val Acc: 0.9307 | LR: 0.00100
+Epoch 155/200 | Loss: 0.0072 | Val Acc: 0.9312 | LR: 0.00100
+   >> New Best Saved! (0.9312)
+Epoch 156/200 | Loss: 0.0065 | Val Acc: 0.9310 | LR: 0.00100
+Epoch 157/200 | Loss: 0.0068 | Val Acc: 0.9299 | LR: 0.00100
+Epoch 158/200 | Loss: 0.0066 | Val Acc: 0.9312 | LR: 0.00100
+Epoch 159/200 | Loss: 0.0065 | Val Acc: 0.9315 | LR: 0.00100
+   >> New Best Saved! (0.9315)
+Epoch 160/200 | Loss: 0.0066 | Val Acc: 0.9310 | LR: 0.00100
+Epoch 161/200 | Loss: 0.0067 | Val Acc: 0.9306 | LR: 0.00100
+Epoch 162/200 | Loss: 0.0064 | Val Acc: 0.9319 | LR: 0.00100
+   >> New Best Saved! (0.9319)
+Epoch 163/200 | Loss: 0.0062 | Val Acc: 0.9311 | LR: 0.00100
+Epoch 164/200 | Loss: 0.0060 | Val Acc: 0.9318 | LR: 0.00100
+Epoch 165/200 | Loss: 0.0062 | Val Acc: 0.9321 | LR: 0.00100
+   >> New Best Saved! (0.9321)
+Epoch 166/200 | Loss: 0.0064 | Val Acc: 0.9320 | LR: 0.00100
+Epoch 167/200 | Loss: 0.0064 | Val Acc: 0.9314 | LR: 0.00100
+Epoch 168/200 | Loss: 0.0059 | Val Acc: 0.9312 | LR: 0.00100
+Epoch 169/200 | Loss: 0.0062 | Val Acc: 0.9308 | LR: 0.00100
+Epoch 170/200 | Loss: 0.0060 | Val Acc: 0.9321 | LR: 0.00100
+Epoch 171/200 | Loss: 0.0057 | Val Acc: 0.9317 | LR: 0.00100
+Epoch 172/200 | Loss: 0.0061 | Val Acc: 0.9309 | LR: 0.00100
+Epoch 173/200 | Loss: 0.0063 | Val Acc: 0.9312 | LR: 0.00100
+Epoch 174/200 | Loss: 0.0059 | Val Acc: 0.9313 | LR: 0.00100
+Epoch 175/200 | Loss: 0.0058 | Val Acc: 0.9318 | LR: 0.00100
+Epoch 176/200 | Loss: 0.0061 | Val Acc: 0.9310 | LR: 0.00100
+Epoch 177/200 | Loss: 0.0053 | Val Acc: 0.9304 | LR: 0.00100
+Epoch 178/200 | Loss: 0.0056 | Val Acc: 0.9315 | LR: 0.00100
+Epoch 179/200 | Loss: 0.0056 | Val Acc: 0.9322 | LR: 0.00100
+   >> New Best Saved! (0.9322)
+Epoch 180/200 | Loss: 0.0063 | Val Acc: 0.9316 | LR: 0.00100
+Epoch 181/200 | Loss: 0.0050 | Val Acc: 0.9312 | LR: 0.00100
+Epoch 182/200 | Loss: 0.0056 | Val Acc: 0.9307 | LR: 0.00100
+Epoch 183/200 | Loss: 0.0061 | Val Acc: 0.9302 | LR: 0.00100
+Epoch 184/200 | Loss: 0.0054 | Val Acc: 0.9302 | LR: 0.00100
+Epoch 185/200 | Loss: 0.0056 | Val Acc: 0.9311 | LR: 0.00100
+Epoch 186/200 | Loss: 0.0057 | Val Acc: 0.9317 | LR: 0.00100
+Epoch 187/200 | Loss: 0.0062 | Val Acc: 0.9319 | LR: 0.00100
+Epoch 188/200 | Loss: 0.0059 | Val Acc: 0.9308 | LR: 0.00100
+Epoch 189/200 | Loss: 0.0055 | Val Acc: 0.9314 | LR: 0.00100
+Epoch 190/200 | Loss: 0.0056 | Val Acc: 0.9314 | LR: 0.00100
+Epoch 191/200 | Loss: 0.0054 | Val Acc: 0.9311 | LR: 0.00100
+Epoch 192/200 | Loss: 0.0053 | Val Acc: 0.9305 | LR: 0.00100
+Epoch 193/200 | Loss: 0.0050 | Val Acc: 0.9306 | LR: 0.00100
+Epoch 194/200 | Loss: 0.0056 | Val Acc: 0.9313 | LR: 0.00100
+Epoch 195/200 | Loss: 0.0054 | Val Acc: 0.9310 | LR: 0.00100
+Epoch 196/200 | Loss: 0.0051 | Val Acc: 0.9304 | LR: 0.00100
+Epoch 197/200 | Loss: 0.0050 | Val Acc: 0.9313 | LR: 0.00100
+Epoch 198/200 | Loss: 0.0053 | Val Acc: 0.9306 | LR: 0.00100
+Epoch 199/200 | Loss: 0.0051 | Val Acc: 0.9310 | LR: 0.00100
+Epoch 200/200 | Loss: 0.0053 | Val Acc: 0.9311 | LR: 0.00100
+=== Finetuning Complete. Best Acc: 0.9322 ===
